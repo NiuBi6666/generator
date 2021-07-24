@@ -6,22 +6,24 @@ import org.springframework.stereotype.Component;
 
 /*******************************************************************************
  *   @Author lixiuguang
- * - File Name: StartUp
+ * - File Name: GeneratorStart
  * - Description:
  * - History:
  * Date         Author          Modification
  * 2021/7/22     lixiuguang    Create the current class
  *******************************************************************************/
-@Component
-public class StartUp {
+public class GeneratorStart {
 
-    @Value("${mybatis-generator-xml-path}")
-    private String generatorXmlPath;
+    private static final String configfile = "-configfile";
+    private static final String overwrite = "-overwrite";
+
+    public static void generator(String configXmlPath) {
+        String[] args = new String[]{configfile, configXmlPath, overwrite};
+        ShellRunner.main(args);
+    }
 
     public static void main(String[] args) {
-        String path = "C:/LiXiuGuang/Workspace/IntelliJIDEA_Workspace/Localhost_Workspace/generator/src/main/resources/generator/manager.xml";
-        args = new String[]{"-configfile", path, "-overwrite"};
-        ShellRunner.main(args);
+        generator("C:\\LiXiuGuang\\Workspace\\IntelliJIDEA_Workspace\\Git_NiuBi6666_Workspace\\generator\\src\\main\\resources\\config\\manager.xml");
     }
 
 }

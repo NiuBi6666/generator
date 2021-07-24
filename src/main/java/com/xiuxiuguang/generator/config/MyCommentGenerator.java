@@ -1,4 +1,4 @@
-package com.xiuxiuguang.generator.generator;
+package com.xiuxiuguang.generator.config;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -13,7 +13,6 @@ import org.mybatis.generator.api.dom.java.Method;
 import org.mybatis.generator.api.dom.java.Parameter;
 import org.mybatis.generator.api.dom.java.TopLevelClass;
 import org.mybatis.generator.internal.DefaultCommentGenerator;
-import org.springframework.util.StringUtils;
 
 /*******************************************************************************
  *   @Author lixiuguang
