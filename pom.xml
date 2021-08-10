@@ -39,7 +39,9 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.35</version>
+            <!--Mysql5版本<version>5.1.35</version>-->
+            <!--Mysql8版本<version>8.0.25</version>-->
+            <version>8.0.25</version>
         </dependency>
 
 
